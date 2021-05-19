@@ -1,0 +1,2487 @@
+2021-04-26 11:09:30.268  INFO 19924 --- [line:48][main] com.ailin.RedisModeApplication           : Starting RedisModeApplication on USER-20190525CB with PID 19924 (F:\idea2020Project\redisMode\target\classes started by Administrator in F:\idea2020Project\redisMode)
+2021-04-26 11:09:30.273  INFO 19924 --- [line:593][main] com.ailin.RedisModeApplication           : No active profile set, falling back to default profiles: default
+2021-04-26 11:09:30.316  INFO 19924 --- [line:583][main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626c44e7: startup date [Mon Apr 26 11:09:30 CST 2021]; root of context hierarchy
+2021-04-26 11:09:30.410  INFO 19924 --- [line:30][background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 5.3.5.Final
+2021-04-26 11:09:31.208  WARN 19924 --- [line:166][main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ailin]' package. Please check your configuration.
+2021-04-26 11:09:31.233  INFO 19924 --- [line:165][main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-26 11:09:31.294  INFO 19924 --- [line:330][main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-04-26 11:09:31.460  INFO 19924 --- [line:130][main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-04-26 11:09:31.468  INFO 19924 --- [line:158][main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-04-26 11:09:31.621  INFO 19924 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$8e9d86e5] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:09:31.666  INFO 19924 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$baeb7562] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:09:31.780  INFO 19924 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:09:31.781  INFO 19924 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:09:32.230  INFO 19924 --- [line:89][main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8882 (http)
+2021-04-26 11:09:32.245  INFO 19924 --- [line:179][main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 11:09:32.246  INFO 19924 --- [line:179][main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-04-26 11:09:32.350  INFO 19924 --- [line:179][localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 11:09:32.351  INFO 19924 --- [line:276][localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 2035 ms
+2021-04-26 11:09:32.467  INFO 19924 --- [line:190][localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-04-26 11:09:32.471  INFO 19924 --- [line:258][localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-04-26 11:09:32.979  INFO 19924 --- [line:87][main] com.ailin.config.RedisConfigure          : redis初始化成功！
+2021-04-26 11:09:33.091  INFO 19924 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = client01
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 900000
+	max.poll.records = 10
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:09:33.094  INFO 19924 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = client01
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 900000
+	max.poll.records = 10
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:09:33.121  INFO 19924 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:09:33.121  INFO 19924 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:09:33.171  INFO 19924 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/test]}" onto public com.ailin.mode.ResultMode<java.util.Map> com.ailin.contoller.FileUpController.test()
+2021-04-26 11:09:33.173  INFO 19924 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/getImage]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.FileUpController.getImage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-04-26 11:09:33.173  INFO 19924 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image],methods=[POST]}" onto public com.ailin.mode.ResultMode<com.ailin.Pojo.User> com.ailin.contoller.FileUpController.upload(java.lang.String,java.lang.String,java.util.List<org.springframework.web.multipart.MultipartFile>)
+2021-04-26 11:09:33.174  INFO 19924 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/kafka/sendKafkaMessage]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.KafkaController.sendKafkaMessage()
+2021-04-26 11:09:33.176  INFO 19924 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/deleteAll]}" onto public com.ailin.mode.ResultMode<java.lang.Long> com.ailin.contoller.RedisController.deleteAll()
+2021-04-26 11:09:33.176  INFO 19924 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/getData]}" onto public com.ailin.mode.ResultMode<com.ailin.Pojo.User> com.ailin.contoller.RedisController.getData()
+2021-04-26 11:09:33.177  INFO 19924 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sql/getUser],methods=[POST]}" onto public com.ailin.mode.ResultMode<com.ailin.Pojo.User> com.ailin.contoller.SqlController.getUser(com.ailin.dto.getUserDto,java.lang.String,int)
+2021-04-26 11:09:33.177  INFO 19924 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sql/addLicenseIndexReference]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.SqlController.addLicenseIndexReference()
+2021-04-26 11:09:33.178  INFO 19924 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sql/addUser]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.SqlController.addUser()
+2021-04-26 11:09:33.180  INFO 19924 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-04-26 11:09:33.181  INFO 19924 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-26 11:09:33.258  INFO 19924 --- [line:534][main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626c44e7: startup date [Mon Apr 26 11:09:30 CST 2021]; root of context hierarchy
+2021-04-26 11:09:33.302  INFO 19924 --- [line:273][main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in commonExceptionHandler
+2021-04-26 11:09:33.470  INFO 19924 --- [line:60][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-04-26 11:09:33.470  INFO 19924 --- [line:60][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-04-26 11:09:33.471  INFO 19924 --- [line:60][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-04-26 11:09:33.471  INFO 19924 --- [line:83][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-04-26 11:09:33.825  INFO 19924 --- [line:165][main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2021-04-26 11:09:34.170  INFO 19924 --- [line:431][main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-04-26 11:09:34.190  INFO 19924 --- [line:343][main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2021-04-26 11:09:34.193  INFO 19924 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:09:34.193  INFO 19924 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:09:34.195  INFO 19924 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:09:34.195  INFO 19924 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:09:34.198  INFO 19924 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:09:34.198  INFO 19924 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-2
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:09:34.200  INFO 19924 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:09:34.200  INFO 19924 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:09:34.201  INFO 19924 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:09:34.201  INFO 19924 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-3
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:09:34.203  INFO 19924 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:09:34.204  INFO 19924 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:09:34.204  INFO 19924 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:09:34.204  INFO 19924 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-4
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:09:34.206  INFO 19924 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:09:34.206  INFO 19924 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:09:34.207  INFO 19924 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:09:34.207  INFO 19924 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-5
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:09:34.209  INFO 19924 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:09:34.210  INFO 19924 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:09:34.210  INFO 19924 --- [line:108][main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-04-26 11:09:34.210  INFO 19924 --- [line:81][main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:8882.errorChannel' has 1 subscriber(s).
+2021-04-26 11:09:34.211  INFO 19924 --- [line:97][main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2021-04-26 11:09:34.220  INFO 19924 --- [line:179][main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8882"]
+2021-04-26 11:09:34.227  INFO 19924 --- [line:179][main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8882"]
+2021-04-26 11:09:34.228  INFO 19924 --- [line:179][main] o.a.tomcat.util.net.NioSelectorPool      : Using a shared selector for servlet write/read
+2021-04-26 11:09:34.242  INFO 19924 --- [line:201][main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8882 (http)
+2021-04-26 11:09:34.245  INFO 19924 --- [line:57][main] com.ailin.RedisModeApplication           : Started RedisModeApplication in 4.395 seconds (JVM running for 5.139)
+2021-04-26 11:09:34.345  INFO 19924 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:09:34.345  INFO 19924 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:09:34.345  INFO 19924 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:09:34.345  INFO 19924 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:09:34.345  INFO 19924 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:09:34.347  INFO 19924 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:09:34.347  INFO 19924 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:09:34.347  INFO 19924 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:09:34.347  INFO 19924 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:09:34.348  INFO 19924 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:09:34.347  INFO 19924 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:09:34.348  INFO 19924 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:09:34.348  INFO 19924 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:09:34.348  INFO 19924 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:09:34.348  INFO 19924 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:09:34.348  INFO 19924 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:09:34.348  INFO 19924 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:09:34.348  INFO 19924 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:09:34.349  INFO 19924 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:09:34.349  INFO 19924 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:09:34.357  INFO 19924 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:09:34.376  INFO 19924 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 2
+2021-04-26 11:09:34.376  INFO 19924 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 2
+2021-04-26 11:09:34.376  INFO 19924 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 2
+2021-04-26 11:09:34.376  INFO 19924 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 2
+2021-04-26 11:09:34.376  INFO 19924 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 2
+2021-04-26 11:09:34.378  INFO 19924 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [] for group group01
+2021-04-26 11:09:34.378  INFO 19924 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [] for group group01
+2021-04-26 11:09:34.379  INFO 19924 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [] for group group01
+2021-04-26 11:09:34.380  INFO 19924 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [] for group group01
+2021-04-26 11:09:34.381  INFO 19924 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[]
+2021-04-26 11:09:34.381  INFO 19924 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[]
+2021-04-26 11:09:34.381  INFO 19924 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [topic01-0] for group group01
+2021-04-26 11:09:34.381  INFO 19924 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[]
+2021-04-26 11:09:34.381  INFO 19924 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[]
+2021-04-26 11:09:34.393  INFO 19924 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[topic01-0]
+2021-04-26 11:10:27.983  INFO 19924 --- [line:179][http-nio-8882-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-04-26 11:10:27.983  INFO 19924 --- [line:489][http-nio-8882-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-04-26 11:10:28.004  INFO 19924 --- [line:508][http-nio-8882-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 21 ms
+2021-04-26 11:10:28.059  INFO 19924 --- [line:180][http-nio-8882-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 1
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-04-26 11:10:28.059  INFO 19924 --- [line:180][http-nio-8882-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 1
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-04-26 11:10:28.066  WARN 19924 --- [line:188][http-nio-8882-exec-1] o.a.k.clients.producer.ProducerConfig    : The configuration 'max.poll.interval.ms' was supplied but isn't a known config.
+2021-04-26 11:10:28.066  INFO 19924 --- [line:83][http-nio-8882-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:10:28.066  INFO 19924 --- [line:84][http-nio-8882-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:10:28.183  INFO 19924 --- [line:33][kafka-producer-network-thread | producer-1] c.a.server.kafka.KafkaProducerServer     : 消息发送成功: {"userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:10:28.238  INFO 19924 --- [line:99][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-L-1] c.a.server.kafka.KafkaConsumerServer     : 用户信息：{"address":"南安","age":14,"name":"kafka测试1","sex":"F","userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:10:46.532  INFO 19924 --- [line:33][kafka-producer-network-thread | producer-1] c.a.server.kafka.KafkaProducerServer     : 消息发送成功: {"userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:10:46.533  INFO 19924 --- [line:99][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-L-1] c.a.server.kafka.KafkaConsumerServer     : 用户信息：{"address":"南安","age":14,"name":"kafka测试1","sex":"F","userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:10:48.182  INFO 19924 --- [line:33][kafka-producer-network-thread | producer-1] c.a.server.kafka.KafkaProducerServer     : 消息发送成功: {"userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:10:48.183  INFO 19924 --- [line:99][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-L-1] c.a.server.kafka.KafkaConsumerServer     : 用户信息：{"address":"南安","age":14,"name":"kafka测试1","sex":"F","userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:11:07.689  INFO 19924 --- [line:33][kafka-producer-network-thread | producer-1] c.a.server.kafka.KafkaProducerServer     : 消息发送成功: {"userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:11:09.671  INFO 19924 --- [line:99][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-L-1] c.a.server.kafka.KafkaConsumerServer     : 用户信息：{"address":"南安","age":14,"name":"kafka测试1","sex":"F","userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:12:24.141  INFO 19924 --- [line:600][kafka-coordinator-heartbeat-thread | group01] o.a.k.c.c.internals.AbstractCoordinator  : Marking the coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) dead for group group01
+2021-04-26 11:12:24.141  INFO 19924 --- [line:600][kafka-coordinator-heartbeat-thread | group01] o.a.k.c.c.internals.AbstractCoordinator  : Marking the coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) dead for group group01
+2021-04-26 11:12:24.141  INFO 19924 --- [line:600][kafka-coordinator-heartbeat-thread | group01] o.a.k.c.c.internals.AbstractCoordinator  : Marking the coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) dead for group group01
+2021-04-26 11:12:24.141  INFO 19924 --- [line:600][kafka-coordinator-heartbeat-thread | group01] o.a.k.c.c.internals.AbstractCoordinator  : Marking the coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) dead for group group01
+2021-04-26 11:12:24.141  INFO 19924 --- [line:600][kafka-coordinator-heartbeat-thread | group01] o.a.k.c.c.internals.AbstractCoordinator  : Marking the coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) dead for group group01
+2021-04-26 11:12:24.142  INFO 19924 --- [line:33][kafka-producer-network-thread | producer-1] c.a.server.kafka.KafkaProducerServer     : 消息发送成功: {"userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:12:24.142  INFO 19924 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:12:24.143  INFO 19924 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:12:24.143  INFO 19924 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:12:24.143  INFO 19924 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:12:24.143  INFO 19924 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:12:29.048  INFO 19924 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:12:29.048  INFO 19924 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [topic01-0] for group group01
+2021-04-26 11:12:30.231  INFO 19924 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:12:30.744  INFO 19924 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:12:32.559  INFO 19924 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:12:32.559  INFO 19924 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:12:32.559  INFO 19924 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:12:32.559  INFO 19924 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:12:32.559  INFO 19924 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:12:32.560  INFO 19924 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 4
+2021-04-26 11:12:32.560  INFO 19924 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:12:34.193  INFO 19924 --- [line:99][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-L-1] c.a.server.kafka.KafkaConsumerServer     : 用户信息：{"address":"南安","age":14,"name":"kafka测试1","sex":"F","userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:12:34.193  INFO 19924 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [topic01-0] for group group01
+2021-04-26 11:12:34.193  INFO 19924 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:12:34.193  INFO 19924 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[topic01-0]
+2021-04-26 11:12:34.194  INFO 19924 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:12:34.194  INFO 19924 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:12:34.195  INFO 19924 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[topic01-0]
+2021-04-26 11:12:35.895  INFO 19924 --- [line:99][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-L-1] c.a.server.kafka.KafkaConsumerServer     : 用户信息：{"address":"南安","age":14,"name":"kafka测试1","sex":"F","userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:12:35.895 ERROR 19924 --- [line:340][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : User provided listener org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer$1 for group group01 failed on partition revocation
+
+org.apache.kafka.clients.consumer.CommitFailedException: Commit cannot be completed since the group has already rebalanced and assigned the partitions to another member. This means that the time between subsequent calls to poll() was longer than the configured max.poll.interval.ms, which typically implies that the poll loop is spending too much time message processing. You can address this either by increasing the session timeout or by reducing the maximum size of batches returned in poll() with max.poll.records.
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.sendOffsetCommitRequest(ConsumerCoordinator.java:600)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.commitOffsetsSync(ConsumerCoordinator.java:498)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.commitSync(KafkaConsumer.java:1104)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.commitIfNecessary(KafkaMessageListenerContainer.java:969)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.processCommits(KafkaMessageListenerContainer.java:840)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.commitManualAcks(KafkaMessageListenerContainer.java:652)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.access$1200(KafkaMessageListenerContainer.java:245)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer$1.onPartitionsRevoked(KafkaMessageListenerContainer.java:434)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.onJoinPrepare(ConsumerCoordinator.java:336)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.joinGroupIfNeeded(AbstractCoordinator.java:303)
+	at org.apache.kafka.clients.consumer.internals.AbstractCoordinator.ensureActiveGroup(AbstractCoordinator.java:277)
+	at org.apache.kafka.clients.consumer.internals.ConsumerCoordinator.poll(ConsumerCoordinator.java:259)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.pollOnce(KafkaConsumer.java:1013)
+	at org.apache.kafka.clients.consumer.KafkaConsumer.poll(KafkaConsumer.java:979)
+	at org.springframework.kafka.listener.KafkaMessageListenerContainer$ListenerConsumer.run(KafkaMessageListenerContainer.java:558)
+	at java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:511)
+	at java.util.concurrent.FutureTask.run$$$capture(FutureTask.java:266)
+	at java.util.concurrent.FutureTask.run(FutureTask.java)
+	at java.lang.Thread.run(Thread.java:748)
+
+2021-04-26 11:12:35.895  INFO 19924 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:12:37.206  INFO 19924 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [topic01-0] for group group01
+2021-04-26 11:12:37.922  INFO 19924 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[topic01-0]
+2021-04-26 11:12:37.923  INFO 19924 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:12:37.925  INFO 19924 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 5
+2021-04-26 11:12:37.925  INFO 19924 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 5
+2021-04-26 11:12:37.925  INFO 19924 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 5
+2021-04-26 11:12:37.925  INFO 19924 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 5
+2021-04-26 11:12:37.925  INFO 19924 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 5
+2021-04-26 11:12:37.926  INFO 19924 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [] for group group01
+2021-04-26 11:12:37.925  INFO 19924 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [] for group group01
+2021-04-26 11:12:37.926  INFO 19924 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [] for group group01
+2021-04-26 11:12:37.926  INFO 19924 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [topic01-0] for group group01
+2021-04-26 11:12:37.926  INFO 19924 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [] for group group01
+2021-04-26 11:12:37.926  INFO 19924 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[]
+2021-04-26 11:12:37.926  INFO 19924 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[]
+2021-04-26 11:12:37.926  INFO 19924 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[]
+2021-04-26 11:12:37.926  INFO 19924 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[]
+2021-04-26 11:12:37.927  INFO 19924 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[topic01-0]
+2021-04-26 11:14:02.993  INFO 19924 --- [line:984][Thread-12] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626c44e7: startup date [Mon Apr 26 11:09:30 CST 2021]; root of context hierarchy
+2021-04-26 11:14:02.994  INFO 19924 --- [line:358][Thread-12] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2021-04-26 11:14:02.996  INFO 19924 --- [line:108][Thread-12] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-04-26 11:14:02.996  INFO 19924 --- [line:81][Thread-12] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:8882.errorChannel' has 0 subscriber(s).
+2021-04-26 11:14:02.996  INFO 19924 --- [line:131][Thread-12] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2021-04-26 11:14:03.000  INFO 19924 --- [line:623][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2021-04-26 11:14:03.000  INFO 19924 --- [line:623][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2021-04-26 11:14:03.001  INFO 19924 --- [line:623][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2021-04-26 11:14:03.001  INFO 19924 --- [line:623][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2021-04-26 11:14:03.781  INFO 19924 --- [line:623][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2021-04-26 11:14:03.782  INFO 19924 --- [line:203][Thread-12] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-04-26 11:14:03.782  INFO 19924 --- [line:449][Thread-12] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-04-26 11:14:03.782  INFO 19924 --- [line:685][Thread-12] o.a.k.clients.producer.KafkaProducer     : Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-04-26 11:14:06.088  INFO 7884 --- [line:48][main] com.ailin.RedisModeApplication           : Starting RedisModeApplication on USER-20190525CB with PID 7884 (F:\idea2020Project\redisMode\target\classes started by Administrator in F:\idea2020Project\redisMode)
+2021-04-26 11:14:06.093  INFO 7884 --- [line:593][main] com.ailin.RedisModeApplication           : No active profile set, falling back to default profiles: default
+2021-04-26 11:14:06.134  INFO 7884 --- [line:583][main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626c44e7: startup date [Mon Apr 26 11:14:06 CST 2021]; root of context hierarchy
+2021-04-26 11:14:06.215  INFO 7884 --- [line:30][background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 5.3.5.Final
+2021-04-26 11:14:06.679  WARN 7884 --- [line:166][main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ailin]' package. Please check your configuration.
+2021-04-26 11:14:06.701  INFO 7884 --- [line:165][main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-26 11:14:06.780  INFO 7884 --- [line:330][main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-04-26 11:14:06.949  INFO 7884 --- [line:130][main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-04-26 11:14:06.954  INFO 7884 --- [line:158][main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-04-26 11:14:07.114  INFO 7884 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$30f823c7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:14:07.166  INFO 7884 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$5d461244] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:14:07.274  INFO 7884 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:14:07.276  INFO 7884 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:14:07.505  INFO 7884 --- [line:89][main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8882 (http)
+2021-04-26 11:14:07.513  INFO 7884 --- [line:179][main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 11:14:07.514  INFO 7884 --- [line:179][main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-04-26 11:14:07.591  INFO 7884 --- [line:179][localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 11:14:07.591  INFO 7884 --- [line:276][localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1457 ms
+2021-04-26 11:14:07.713  INFO 7884 --- [line:190][localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-04-26 11:14:07.716  INFO 7884 --- [line:258][localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-04-26 11:14:08.156  INFO 7884 --- [line:87][main] com.ailin.config.RedisConfigure          : redis初始化成功！
+2021-04-26 11:14:47.656  INFO 7884 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = client01
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 900000
+	max.poll.records = 10
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:14:47.673  INFO 7884 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = client01
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 900000
+	max.poll.records = 10
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:14:47.764  INFO 7884 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:14:47.765  INFO 7884 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:14:50.222  INFO 7884 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/test]}" onto public com.ailin.mode.ResultMode<java.util.Map> com.ailin.contoller.FileUpController.test()
+2021-04-26 11:14:50.224  INFO 7884 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/getImage]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.FileUpController.getImage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-04-26 11:14:50.225  INFO 7884 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image],methods=[POST]}" onto public com.ailin.mode.ResultMode<com.ailin.Pojo.User> com.ailin.contoller.FileUpController.upload(java.lang.String,java.lang.String,java.util.List<org.springframework.web.multipart.MultipartFile>)
+2021-04-26 11:14:50.225  INFO 7884 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/kafka/sendKafkaMessage]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.KafkaController.sendKafkaMessage()
+2021-04-26 11:14:50.227  INFO 7884 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/getData]}" onto public com.ailin.mode.ResultMode<com.ailin.Pojo.User> com.ailin.contoller.RedisController.getData()
+2021-04-26 11:14:50.227  INFO 7884 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/deleteAll]}" onto public com.ailin.mode.ResultMode<java.lang.Long> com.ailin.contoller.RedisController.deleteAll()
+2021-04-26 11:14:50.228  INFO 7884 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sql/addUser]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.SqlController.addUser()
+2021-04-26 11:14:50.228  INFO 7884 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sql/addLicenseIndexReference]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.SqlController.addLicenseIndexReference()
+2021-04-26 11:14:50.229  INFO 7884 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sql/getUser],methods=[POST]}" onto public com.ailin.mode.ResultMode<com.ailin.Pojo.User> com.ailin.contoller.SqlController.getUser(com.ailin.dto.getUserDto,java.lang.String,int)
+2021-04-26 11:14:50.231  INFO 7884 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-04-26 11:14:50.232  INFO 7884 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-26 11:14:50.307  INFO 7884 --- [line:534][main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626c44e7: startup date [Mon Apr 26 11:14:06 CST 2021]; root of context hierarchy
+2021-04-26 11:14:50.348  INFO 7884 --- [line:273][main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in commonExceptionHandler
+2021-04-26 11:14:50.515  INFO 7884 --- [line:60][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-04-26 11:14:50.515  INFO 7884 --- [line:60][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-04-26 11:14:50.516  INFO 7884 --- [line:60][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-04-26 11:14:50.516  INFO 7884 --- [line:83][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-04-26 11:14:50.838  INFO 7884 --- [line:165][main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2021-04-26 11:14:51.158  INFO 7884 --- [line:431][main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-04-26 11:14:51.173  INFO 7884 --- [line:343][main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2021-04-26 11:14:51.175  INFO 7884 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:14:51.176  INFO 7884 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-1
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:14:51.178  INFO 7884 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:14:51.178  INFO 7884 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:14:51.181  INFO 7884 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:14:51.181  INFO 7884 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-2
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:14:51.183  INFO 7884 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:14:51.183  INFO 7884 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:14:51.184  INFO 7884 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:14:51.184  INFO 7884 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-3
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:14:51.186  INFO 7884 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:14:51.187  INFO 7884 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:14:51.187  INFO 7884 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:14:51.187  INFO 7884 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-4
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:14:51.189  INFO 7884 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:14:51.189  INFO 7884 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:14:51.190  INFO 7884 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = 
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:14:51.190  INFO 7884 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = consumer-5
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 30000
+	max.poll.records = 50
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:14:51.193  INFO 7884 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:14:51.193  INFO 7884 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:14:51.193  INFO 7884 --- [line:108][main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-04-26 11:14:51.194  INFO 7884 --- [line:81][main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:8882.errorChannel' has 1 subscriber(s).
+2021-04-26 11:14:51.194  INFO 7884 --- [line:97][main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2021-04-26 11:14:51.206  INFO 7884 --- [line:179][main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8882"]
+2021-04-26 11:14:51.213  INFO 7884 --- [line:179][main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8882"]
+2021-04-26 11:14:51.214  INFO 7884 --- [line:179][main] o.a.tomcat.util.net.NioSelectorPool      : Using a shared selector for servlet write/read
+2021-04-26 11:14:51.228  INFO 7884 --- [line:201][main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8882 (http)
+2021-04-26 11:14:51.232  INFO 7884 --- [line:57][main] com.ailin.RedisModeApplication           : Started RedisModeApplication in 45.484 seconds (JVM running for 46.278)
+2021-04-26 11:14:51.323  INFO 7884 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:14:51.323  INFO 7884 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:14:51.323  INFO 7884 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:14:51.323  INFO 7884 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:14:51.323  INFO 7884 --- [line:555][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:14:51.325  INFO 7884 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:14:51.325  INFO 7884 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:14:51.325  INFO 7884 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:14:51.325  INFO 7884 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:14:51.325  INFO 7884 --- [line:333][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:14:51.326  INFO 7884 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:14:51.326  INFO 7884 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:14:51.326  INFO 7884 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:14:51.326  INFO 7884 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:14:51.326  INFO 7884 --- [line:242][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions revoked:[]
+2021-04-26 11:14:51.326  INFO 7884 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:14:51.326  INFO 7884 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:14:51.326  INFO 7884 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:14:51.326  INFO 7884 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:14:51.326  INFO 7884 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:14:51.336  INFO 7884 --- [line:381][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:14:51.341  INFO 7884 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 8
+2021-04-26 11:14:51.341  INFO 7884 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 8
+2021-04-26 11:14:51.341  INFO 7884 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 8
+2021-04-26 11:14:51.341  INFO 7884 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 8
+2021-04-26 11:14:51.341  INFO 7884 --- [line:349][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 8
+2021-04-26 11:14:51.343  INFO 7884 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [] for group group01
+2021-04-26 11:14:51.343  INFO 7884 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [] for group group01
+2021-04-26 11:14:51.344  INFO 7884 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [] for group group01
+2021-04-26 11:14:51.345  INFO 7884 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[]
+2021-04-26 11:14:51.345  INFO 7884 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [] for group group01
+2021-04-26 11:14:51.345  INFO 7884 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[]
+2021-04-26 11:14:51.345  INFO 7884 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[]
+2021-04-26 11:14:51.346  INFO 7884 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[]
+2021-04-26 11:14:51.346  INFO 7884 --- [line:225][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [topic01-0] for group group01
+2021-04-26 11:14:51.351  INFO 7884 --- [line:247][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] o.s.k.l.KafkaMessageListenerContainer    : partitions assigned:[topic01-0]
+2021-04-26 11:15:05.075  INFO 7884 --- [line:984][Thread-14] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626c44e7: startup date [Mon Apr 26 11:14:06 CST 2021]; root of context hierarchy
+2021-04-26 11:15:05.076  INFO 7884 --- [line:358][Thread-14] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2021-04-26 11:15:05.078  INFO 7884 --- [line:108][Thread-14] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-04-26 11:15:05.079  INFO 7884 --- [line:81][Thread-14] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:8882.errorChannel' has 0 subscriber(s).
+2021-04-26 11:15:05.079  INFO 7884 --- [line:131][Thread-14] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2021-04-26 11:15:05.082  INFO 7884 --- [line:623][org.springframework.kafka.KafkaListenerEndpointContainer#0-3-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2021-04-26 11:15:05.082  INFO 7884 --- [line:623][org.springframework.kafka.KafkaListenerEndpointContainer#0-2-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2021-04-26 11:15:05.083  INFO 7884 --- [line:623][org.springframework.kafka.KafkaListenerEndpointContainer#0-1-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2021-04-26 11:15:05.083  INFO 7884 --- [line:623][org.springframework.kafka.KafkaListenerEndpointContainer#0-4-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2021-04-26 11:15:05.464  INFO 7884 --- [line:623][org.springframework.kafka.KafkaListenerEndpointContainer#0-0-C-1] essageListenerContainer$ListenerConsumer : Consumer stopped
+2021-04-26 11:15:05.465  INFO 7884 --- [line:203][Thread-14] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-04-26 11:15:05.466  INFO 7884 --- [line:449][Thread-14] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-04-26 11:15:08.419  INFO 16052 --- [line:48][main] com.ailin.RedisModeApplication           : Starting RedisModeApplication on USER-20190525CB with PID 16052 (F:\idea2020Project\redisMode\target\classes started by Administrator in F:\idea2020Project\redisMode)
+2021-04-26 11:15:08.422  INFO 16052 --- [line:593][main] com.ailin.RedisModeApplication           : No active profile set, falling back to default profiles: default
+2021-04-26 11:15:08.453  INFO 16052 --- [line:583][main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626c44e7: startup date [Mon Apr 26 11:15:08 CST 2021]; root of context hierarchy
+2021-04-26 11:15:08.527  INFO 16052 --- [line:30][background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 5.3.5.Final
+2021-04-26 11:15:08.988  WARN 16052 --- [line:166][main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ailin]' package. Please check your configuration.
+2021-04-26 11:15:09.013  INFO 16052 --- [line:165][main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-26 11:15:09.078  INFO 16052 --- [line:330][main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-04-26 11:15:09.264  INFO 16052 --- [line:130][main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-04-26 11:15:09.270  INFO 16052 --- [line:158][main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-04-26 11:15:09.419  INFO 16052 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$5c39852d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:15:09.463  INFO 16052 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$888773aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:15:09.576  INFO 16052 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:15:09.579  INFO 16052 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:15:09.807  INFO 16052 --- [line:89][main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8882 (http)
+2021-04-26 11:15:09.816  INFO 16052 --- [line:179][main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 11:15:09.816  INFO 16052 --- [line:179][main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-04-26 11:15:09.897  INFO 16052 --- [line:179][localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 11:15:09.897  INFO 16052 --- [line:276][localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1444 ms
+2021-04-26 11:15:10.018  INFO 16052 --- [line:190][localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-04-26 11:15:10.023  INFO 16052 --- [line:258][localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-04-26 11:15:10.468  INFO 16052 --- [line:87][main] com.ailin.config.RedisConfigure          : redis初始化成功！
+2021-04-26 11:15:13.281  INFO 16052 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = client01
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 900000
+	max.poll.records = 10
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:15:13.285  INFO 16052 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = client01
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 900000
+	max.poll.records = 10
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:15:13.310  INFO 16052 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:15:13.311  INFO 16052 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:15:13.360  INFO 16052 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/test]}" onto public com.ailin.mode.ResultMode<java.util.Map> com.ailin.contoller.FileUpController.test()
+2021-04-26 11:15:13.362  INFO 16052 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image],methods=[POST]}" onto public com.ailin.mode.ResultMode<com.ailin.Pojo.User> com.ailin.contoller.FileUpController.upload(java.lang.String,java.lang.String,java.util.List<org.springframework.web.multipart.MultipartFile>)
+2021-04-26 11:15:13.362  INFO 16052 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/getImage]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.FileUpController.getImage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-04-26 11:15:13.363  INFO 16052 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/kafka/sendKafkaMessage]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.KafkaController.sendKafkaMessage()
+2021-04-26 11:15:13.365  INFO 16052 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/getData]}" onto public com.ailin.mode.ResultMode<com.ailin.Pojo.User> com.ailin.contoller.RedisController.getData()
+2021-04-26 11:15:13.365  INFO 16052 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/deleteAll]}" onto public com.ailin.mode.ResultMode<java.lang.Long> com.ailin.contoller.RedisController.deleteAll()
+2021-04-26 11:15:13.365  INFO 16052 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sql/addLicenseIndexReference]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.SqlController.addLicenseIndexReference()
+2021-04-26 11:15:13.366  INFO 16052 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sql/addUser]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.SqlController.addUser()
+2021-04-26 11:15:13.366  INFO 16052 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sql/getUser],methods=[POST]}" onto public com.ailin.mode.ResultMode<com.ailin.Pojo.User> com.ailin.contoller.SqlController.getUser(com.ailin.dto.getUserDto,java.lang.String,int)
+2021-04-26 11:15:13.369  INFO 16052 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-04-26 11:15:13.369  INFO 16052 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-26 11:15:13.448  INFO 16052 --- [line:534][main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626c44e7: startup date [Mon Apr 26 11:15:08 CST 2021]; root of context hierarchy
+2021-04-26 11:15:13.451  INFO 16052 --- [line:555][pool-2-thread-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:15:13.452  INFO 16052 --- [line:333][pool-2-thread-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:15:13.452  INFO 16052 --- [line:381][pool-2-thread-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:15:13.497  INFO 16052 --- [line:273][main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in commonExceptionHandler
+2021-04-26 11:15:13.549  INFO 16052 --- [line:349][pool-2-thread-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 9
+2021-04-26 11:15:13.551  INFO 16052 --- [line:225][pool-2-thread-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [topic01-0] for group group01
+2021-04-26 11:15:13.669  INFO 16052 --- [line:60][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-04-26 11:15:13.670  INFO 16052 --- [line:60][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-04-26 11:15:13.670  INFO 16052 --- [line:60][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-04-26 11:15:13.671  INFO 16052 --- [line:83][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-04-26 11:15:13.997  INFO 16052 --- [line:165][main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2021-04-26 11:15:14.328  INFO 16052 --- [line:431][main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-04-26 11:15:14.335  INFO 16052 --- [line:343][main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2021-04-26 11:15:14.336  INFO 16052 --- [line:108][main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-04-26 11:15:14.336  INFO 16052 --- [line:81][main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:8882.errorChannel' has 1 subscriber(s).
+2021-04-26 11:15:14.336  INFO 16052 --- [line:97][main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2021-04-26 11:15:14.336  INFO 16052 --- [line:343][main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-04-26 11:15:14.344  INFO 16052 --- [line:179][main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8882"]
+2021-04-26 11:15:14.350  INFO 16052 --- [line:179][main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8882"]
+2021-04-26 11:15:14.352  INFO 16052 --- [line:179][main] o.a.tomcat.util.net.NioSelectorPool      : Using a shared selector for servlet write/read
+2021-04-26 11:15:14.363  INFO 16052 --- [line:201][main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8882 (http)
+2021-04-26 11:15:14.367  INFO 16052 --- [line:57][main] com.ailin.RedisModeApplication           : Started RedisModeApplication in 6.246 seconds (JVM running for 6.898)
+2021-04-26 11:15:15.318  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:21.302  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:24.911  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:26.915  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:28.919  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:30.929  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:32.937  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:34.938  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:35.209  INFO 16052 --- [line:179][http-nio-8882-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-04-26 11:15:35.209  INFO 16052 --- [line:489][http-nio-8882-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-04-26 11:15:35.228  INFO 16052 --- [line:508][http-nio-8882-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2021-04-26 11:15:35.275  INFO 16052 --- [line:180][http-nio-8882-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 1
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-04-26 11:15:35.276  INFO 16052 --- [line:180][http-nio-8882-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 1
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-04-26 11:15:35.283  WARN 16052 --- [line:188][http-nio-8882-exec-1] o.a.k.clients.producer.ProducerConfig    : The configuration 'max.poll.interval.ms' was supplied but isn't a known config.
+2021-04-26 11:15:35.283  INFO 16052 --- [line:83][http-nio-8882-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:15:35.283  INFO 16052 --- [line:84][http-nio-8882-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:15:35.397  INFO 16052 --- [line:33][kafka-producer-network-thread | producer-1] c.a.server.kafka.KafkaProducerServer     : 消息发送成功: {"userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:15:37.457  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:39.468  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:41.481  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:43.496  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:45.506  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:47.516  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:49.528  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:51.528  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:53.541  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:55.545  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:57.551  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:15:59.564  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:01.568  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:01.988  INFO 16052 --- [line:33][kafka-producer-network-thread | producer-1] c.a.server.kafka.KafkaProducerServer     : 消息发送成功: {"userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:16:03.994  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:06.007  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:08.014  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:10.025  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:12.033  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:14.042  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:16.048  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:18.060  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:20.066  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:22.078  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:24.086  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:26.092  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:28.095  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:30.105  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:32.108  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:34.124  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:36.126  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:38.134  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:40.136  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:42.149  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:44.150  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:46.164  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:48.174  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:50.184  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:52.197  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:54.205  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:56.205  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:16:58.217  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:00.230  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:02.236  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:04.245  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:06.258  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:08.265  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:10.277  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:12.290  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:14.302  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:16.311  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:18.317  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:20.326  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:22.331  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:24.342  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:26.350  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:28.358  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:30.371  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:32.382  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:34.397  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:36.404  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:38.412  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:40.414  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:42.425  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:44.436  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:46.446  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:48.460  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:50.471  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:52.482  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:54.483  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:56.485  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:17:58.493  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:00.493  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:02.506  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:04.512  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:06.525  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:08.527  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:10.540  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:12.553  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:14.565  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:16.575  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:18.583  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:20.589  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:22.600  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:24.616  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:26.625  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:28.626  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:30.637  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:32.645  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:34.651  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:36.662  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:36.735  INFO 16052 --- [line:33][kafka-producer-network-thread | producer-1] c.a.server.kafka.KafkaProducerServer     : 消息发送成功: {"userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:18:38.741  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:40.744  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:42.752  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:44.753  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:46.769  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:48.778  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:50.785  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:52.793  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:54.794  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:56.803  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:18:58.817  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:00.818  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:02.832  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:04.833  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:06.842  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:08.855  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:10.856  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:12.869  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:14.883  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:16.895  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:18.904  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:20.908  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:22.922  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:24.923  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:26.927  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:28.942  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:30.949  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:32.949  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:34.949  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:36.957  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:38.971  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:40.971  INFO 16052 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:19:41.350  INFO 16052 --- [line:984][Thread-11] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626c44e7: startup date [Mon Apr 26 11:15:08 CST 2021]; root of context hierarchy
+2021-04-26 11:19:41.351  INFO 16052 --- [line:358][Thread-11] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-04-26 11:19:41.351  INFO 16052 --- [line:358][Thread-11] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2021-04-26 11:19:41.352  INFO 16052 --- [line:108][Thread-11] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-04-26 11:19:41.352  INFO 16052 --- [line:81][Thread-11] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:8882.errorChannel' has 0 subscriber(s).
+2021-04-26 11:19:41.352  INFO 16052 --- [line:131][Thread-11] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2021-04-26 11:19:41.352  INFO 16052 --- [line:203][Thread-11] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-04-26 11:19:41.353  INFO 16052 --- [line:449][Thread-11] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-04-26 11:19:41.353  INFO 16052 --- [line:685][Thread-11] o.a.k.clients.producer.KafkaProducer     : Closing the Kafka producer with timeoutMillis = 30000 ms.
+2021-04-26 11:19:44.301  INFO 18732 --- [line:48][main] com.ailin.RedisModeApplication           : Starting RedisModeApplication on USER-20190525CB with PID 18732 (F:\idea2020Project\redisMode\target\classes started by Administrator in F:\idea2020Project\redisMode)
+2021-04-26 11:19:44.304  INFO 18732 --- [line:593][main] com.ailin.RedisModeApplication           : No active profile set, falling back to default profiles: default
+2021-04-26 11:19:44.339  INFO 18732 --- [line:583][main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626c44e7: startup date [Mon Apr 26 11:19:44 CST 2021]; root of context hierarchy
+2021-04-26 11:19:44.421  INFO 18732 --- [line:30][background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 5.3.5.Final
+2021-04-26 11:19:44.900  WARN 18732 --- [line:166][main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.ailin]' package. Please check your configuration.
+2021-04-26 11:19:44.926  INFO 18732 --- [line:165][main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-04-26 11:19:44.995  INFO 18732 --- [line:330][main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-04-26 11:19:45.180  INFO 18732 --- [line:130][main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-04-26 11:19:45.187  INFO 18732 --- [line:158][main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-04-26 11:19:45.337  INFO 18732 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$5c39852d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:19:45.380  INFO 18732 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$888773aa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:19:45.489  INFO 18732 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:19:45.492  INFO 18732 --- [line:325][main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-04-26 11:19:45.728  INFO 18732 --- [line:89][main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8882 (http)
+2021-04-26 11:19:45.737  INFO 18732 --- [line:179][main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-04-26 11:19:45.738  INFO 18732 --- [line:179][main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-04-26 11:19:45.818  INFO 18732 --- [line:179][localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-04-26 11:19:45.818  INFO 18732 --- [line:276][localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1479 ms
+2021-04-26 11:19:45.945  INFO 18732 --- [line:190][localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-04-26 11:19:45.949  INFO 18732 --- [line:258][localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-04-26 11:19:46.407  INFO 18732 --- [line:87][main] com.ailin.config.RedisConfigure          : redis初始化成功！
+2021-04-26 11:20:56.962  INFO 18732 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = client01
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 900000
+	max.poll.records = 10
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:20:56.966  INFO 18732 --- [line:180][main] o.a.k.clients.consumer.ConsumerConfig    : ConsumerConfig values: 
+	auto.commit.interval.ms = 5000
+	auto.offset.reset = latest
+	bootstrap.servers = [127.0.0.1:9092]
+	check.crcs = true
+	client.id = client01
+	connections.max.idle.ms = 540000
+	enable.auto.commit = false
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = group01
+	heartbeat.interval.ms = 3000
+	interceptor.classes = null
+	key.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 900000
+	max.poll.records = 10
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 305000
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	session.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.StringDeserializer
+
+2021-04-26 11:20:56.992  INFO 18732 --- [line:83][main] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:20:56.992  INFO 18732 --- [line:84][main] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:20:57.051  INFO 18732 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/test]}" onto public com.ailin.mode.ResultMode<java.util.Map> com.ailin.contoller.FileUpController.test()
+2021-04-26 11:20:57.052  INFO 18732 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/getImage]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.FileUpController.getImage(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse) throws java.io.IOException
+2021-04-26 11:20:57.053  INFO 18732 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/upload/image],methods=[POST]}" onto public com.ailin.mode.ResultMode<com.ailin.Pojo.User> com.ailin.contoller.FileUpController.upload(java.lang.String,java.lang.String,java.util.List<org.springframework.web.multipart.MultipartFile>)
+2021-04-26 11:20:57.053  INFO 18732 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/kafka/sendKafkaMessage]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.KafkaController.sendKafkaMessage()
+2021-04-26 11:20:57.055  INFO 18732 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/getData]}" onto public com.ailin.mode.ResultMode<com.ailin.Pojo.User> com.ailin.contoller.RedisController.getData()
+2021-04-26 11:20:57.055  INFO 18732 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/redis/deleteAll]}" onto public com.ailin.mode.ResultMode<java.lang.Long> com.ailin.contoller.RedisController.deleteAll()
+2021-04-26 11:20:57.056  INFO 18732 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sql/addUser]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.SqlController.addUser()
+2021-04-26 11:20:57.056  INFO 18732 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sql/addLicenseIndexReference]}" onto public com.ailin.mode.ResultMode<java.lang.String> com.ailin.contoller.SqlController.addLicenseIndexReference()
+2021-04-26 11:20:57.056  INFO 18732 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/sql/getUser],methods=[POST]}" onto public com.ailin.mode.ResultMode<com.ailin.Pojo.User> com.ailin.contoller.SqlController.getUser(com.ailin.dto.getUserDto,java.lang.String,int)
+2021-04-26 11:20:57.059  INFO 18732 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-04-26 11:20:57.060  INFO 18732 --- [line:543][main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-04-26 11:20:57.135  INFO 18732 --- [line:555][pool-2-thread-1] o.a.k.c.c.internals.AbstractCoordinator  : Discovered coordinator USER-20190525CB:9092 (id: 2147483647 rack: null) for group group01.
+2021-04-26 11:20:57.137  INFO 18732 --- [line:534][main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626c44e7: startup date [Mon Apr 26 11:19:44 CST 2021]; root of context hierarchy
+2021-04-26 11:20:57.137  INFO 18732 --- [line:333][pool-2-thread-1] o.a.k.c.c.internals.ConsumerCoordinator  : Revoking previously assigned partitions [] for group group01
+2021-04-26 11:20:57.137  INFO 18732 --- [line:381][pool-2-thread-1] o.a.k.c.c.internals.AbstractCoordinator  : (Re-)joining group group01
+2021-04-26 11:20:57.145  INFO 18732 --- [line:349][pool-2-thread-1] o.a.k.c.c.internals.AbstractCoordinator  : Successfully joined group group01 with generation 11
+2021-04-26 11:20:57.146  INFO 18732 --- [line:225][pool-2-thread-1] o.a.k.c.c.internals.ConsumerCoordinator  : Setting newly assigned partitions [topic01-0] for group group01
+2021-04-26 11:20:57.180  INFO 18732 --- [line:273][main] .m.m.a.ExceptionHandlerExceptionResolver : Detected @ExceptionHandler methods in commonExceptionHandler
+2021-04-26 11:20:57.350  INFO 18732 --- [line:60][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-04-26 11:20:57.350  INFO 18732 --- [line:60][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-04-26 11:20:57.351  INFO 18732 --- [line:60][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-04-26 11:20:57.351  INFO 18732 --- [line:83][main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-04-26 11:20:57.683  INFO 18732 --- [line:165][main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2021-04-26 11:20:58.001  INFO 18732 --- [line:431][main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-04-26 11:20:58.007  INFO 18732 --- [line:343][main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2021-04-26 11:20:58.008  INFO 18732 --- [line:108][main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-04-26 11:20:58.008  INFO 18732 --- [line:81][main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:8882.errorChannel' has 1 subscriber(s).
+2021-04-26 11:20:58.008  INFO 18732 --- [line:97][main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2021-04-26 11:20:58.008  INFO 18732 --- [line:343][main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-04-26 11:20:58.015  INFO 18732 --- [line:179][main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8882"]
+2021-04-26 11:20:58.022  INFO 18732 --- [line:179][main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8882"]
+2021-04-26 11:20:58.023  INFO 18732 --- [line:179][main] o.a.tomcat.util.net.NioSelectorPool      : Using a shared selector for servlet write/read
+2021-04-26 11:20:58.035  INFO 18732 --- [line:201][main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8882 (http)
+2021-04-26 11:20:58.038  INFO 18732 --- [line:57][main] com.ailin.RedisModeApplication           : Started RedisModeApplication in 74.027 seconds (JVM running for 74.741)
+2021-04-26 11:20:59.000  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:01.011  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:03.024  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:05.031  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:07.038  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:07.968  INFO 18732 --- [line:179][http-nio-8882-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-04-26 11:21:07.968  INFO 18732 --- [line:489][http-nio-8882-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-04-26 11:21:07.987  INFO 18732 --- [line:508][http-nio-8882-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2021-04-26 11:21:08.034  INFO 18732 --- [line:180][http-nio-8882-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.id = 
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 1
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-04-26 11:21:08.034  INFO 18732 --- [line:180][http-nio-8882-exec-1] o.a.k.clients.producer.ProducerConfig    : ProducerConfig values: 
+	acks = 1
+	batch.size = 16384
+	block.on.buffer.full = false
+	bootstrap.servers = [127.0.0.1:9092]
+	buffer.memory = 33554432
+	client.id = producer-1
+	compression.type = none
+	connections.max.idle.ms = 540000
+	interceptor.classes = null
+	key.serializer = class org.apache.kafka.common.serialization.StringSerializer
+	linger.ms = 0
+	max.block.ms = 60000
+	max.in.flight.requests.per.connection = 5
+	max.request.size = 1048576
+	metadata.fetch.timeout.ms = 60000
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.sample.window.ms = 30000
+	partitioner.class = class org.apache.kafka.clients.producer.internals.DefaultPartitioner
+	receive.buffer.bytes = 32768
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 1
+	retry.backoff.ms = 100
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.mechanism = GSSAPI
+	security.protocol = PLAINTEXT
+	send.buffer.bytes = 131072
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.1, TLSv1]
+	ssl.endpoint.identification.algorithm = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLS
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	timeout.ms = 30000
+	value.serializer = class org.apache.kafka.common.serialization.StringSerializer
+
+2021-04-26 11:21:08.041  WARN 18732 --- [line:188][http-nio-8882-exec-1] o.a.k.clients.producer.ProducerConfig    : The configuration 'max.poll.interval.ms' was supplied but isn't a known config.
+2021-04-26 11:21:08.041  INFO 18732 --- [line:83][http-nio-8882-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka version : 0.10.1.1
+2021-04-26 11:21:08.041  INFO 18732 --- [line:84][http-nio-8882-exec-1] o.a.kafka.common.utils.AppInfoParser     : Kafka commitId : f10ef2720b03b247
+2021-04-26 11:21:08.152  WARN 18732 --- [line:600][kafka-producer-network-thread | producer-1] org.apache.kafka.clients.NetworkClient   : Error while fetching metadata with correlation id 0 : {topic02=LEADER_NOT_AVAILABLE}
+2021-04-26 11:21:08.275  INFO 18732 --- [line:33][kafka-producer-network-thread | producer-1] c.a.server.kafka.KafkaProducerServer     : 消息发送成功: {"userId":"10706a902a1b42a99e396026a841955e"}
+2021-04-26 11:21:09.045  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:11.057  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:13.069  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:15.070  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:17.074  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:19.085  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:21.089  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:23.089  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:25.100  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:27.111  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:29.124  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:31.133  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:33.137  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:35.149  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:37.163  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:39.172  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:41.182  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:43.189  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:45.190  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:47.201  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:49.215  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:51.224  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:53.225  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:55.227  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:57.240  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:21:59.253  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:01.263  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:03.277  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:05.285  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:07.289  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:09.298  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:11.310  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:13.310  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:15.312  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:17.322  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:19.332  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:21.339  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:23.351  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:25.360  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:27.372  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:29.386  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:31.399  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:33.404  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:35.419  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:37.426  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:39.430  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:41.436  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:43.440  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:45.441  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:47.449  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:49.453  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:51.468  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:53.476  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:55.486  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:57.500  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:22:59.509  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:01.520  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:03.530  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:05.537  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:07.544  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:09.555  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:11.566  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:13.572  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:15.573  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:17.583  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:19.597  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:21.604  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:23.607  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:25.616  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:27.622  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:29.626  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:31.629  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:33.630  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:35.635  INFO 18732 --- [line:60][pool-2-thread-1] c.a.server.kafka.KafkaConsumerServer     : kafka拉取用户数据为空！！！
+2021-04-26 11:23:36.405  INFO 18732 --- [line:984][Thread-12] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@626c44e7: startup date [Mon Apr 26 11:19:44 CST 2021]; root of context hierarchy
+2021-04-26 11:23:36.406  INFO 18732 --- [line:358][Thread-12] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-04-26 11:23:36.407  INFO 18732 --- [line:358][Thread-12] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2021-04-26 11:23:36.407  INFO 18732 --- [line:108][Thread-12] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-04-26 11:23:36.407  INFO 18732 --- [line:81][Thread-12] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:8882.errorChannel' has 0 subscriber(s).
+2021-04-26 11:23:36.407  INFO 18732 --- [line:131][Thread-12] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2021-04-26 11:23:36.408  INFO 18732 --- [line:203][Thread-12] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-04-26 11:23:36.408  INFO 18732 --- [line:449][Thread-12] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-04-26 11:23:36.408  INFO 18732 --- [line:685][Thread-12] o.a.k.clients.producer.KafkaProducer     : Closing the Kafka producer with timeoutMillis = 30000 ms.

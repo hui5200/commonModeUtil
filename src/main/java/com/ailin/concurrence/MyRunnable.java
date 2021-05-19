@@ -1,0 +1,64 @@
+package com.ailin.concurrence;
+
+import com.ailin.util.ImageConverterUtil;
+import com.mysql.jdbc.util.Base64Decoder;
+import sun.misc.BASE64Decoder;
+import sun.misc.BASE64Encoder;
+
+import java.io.*;
+import java.util.List;
+
+public class MyRunnable implements Runnable {
+
+    @Override
+    public void run() {
+        test();
+    }
+
+    public static void test(){
+        //自定义缓存冲区
+        byte[] pdfBytes = new byte[1024];
+        BufferedOutputStream bufferedOutputStream = null;
+        BufferedInputStream bufferedInputStream = null;
+
+        try {
+            bufferedInputStream = new BufferedInputStream(new FileInputStream("F:\\Files\\test55.pdf"));
+            ByteArrayOutputStream byteArrayOutputStream = new ByteArrayOutputStream();
+            bufferedOutputStream = new BufferedOutputStream(byteArrayOutputStream);
+
+            while ( (bufferedInputStream.read(pdfBytes,0, 1024)) != -1){
+                bufferedOutputStream.write(pdfBytes);
+            }
+
+            //刷新输出流，强制写出所有缓冲流
+            bufferedOutputStream.flush();
+            byte[] bytes = byteArrayOutputStream.toByteArray();
+            BASE64Encoder encoder = new BASE64Encoder();
+            String encode = encoder.encode(bytes).trim();
+//            System.out.println(encode);
+
+            BASE64Decoder decoder = new BASE64Decoder();
+            byte[] decodeBuffer = decoder.decodeBuffer(encode);
+
+            long start = System.currentTimeMillis();
+            List<String> image = ImageConverterUtil.Pdf2Image(decodeBuffer);
+
+            BASE64Decoder base64Decoder = new BASE64Decoder();
+            ImageConverterUtil.byte2File(base64Decoder.decodeBuffer(image.get(0)),"F:\\Files\\test", System.currentTimeMillis()+ ".jpg");
+            System.out.println(Thread.currentThread().getName() + "耗时：" +  (System.currentTimeMillis() - start) + "毫秒");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }finally {
+            try {
+                if (bufferedInputStream != null) {
+                    bufferedInputStream.close();
+                }
+                if(bufferedOutputStream != null){
+                    bufferedOutputStream.close();
+                }
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+}

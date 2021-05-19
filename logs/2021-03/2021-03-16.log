@@ -1,0 +1,168 @@
+2021-03-16 17:34:56.762  INFO 22976 --- [main] com.userJoin.UserServerApplication       : Starting UserServerApplication on USER-20190525CB with PID 22976 (F:\idea2020Project\redisMode\target\classes started by Administrator in F:\idea2020Project\redisMode)
+2021-03-16 17:34:56.765  INFO 22976 --- [main] com.userJoin.UserServerApplication       : No active profile set, falling back to default profiles: default
+2021-03-16 17:34:56.791  INFO 22976 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6492fab5: startup date [Tue Mar 16 17:34:56 CST 2021]; root of context hierarchy
+2021-03-16 17:34:56.865  INFO 22976 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 5.3.5.Final
+2021-03-16 17:34:57.173  WARN 22976 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.userJoin]' package. Please check your configuration.
+2021-03-16 17:34:57.181  WARN 22976 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.userJoin]' package. Please check your configuration.
+2021-03-16 17:34:57.204  INFO 22976 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-03-16 17:34:57.237  INFO 22976 --- [main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-03-16 17:34:57.387  INFO 22976 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-03-16 17:34:57.394  INFO 22976 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-03-16 17:34:57.586  INFO 22976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$1a435d74] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-16 17:34:57.629  INFO 22976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$46914bf1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-16 17:34:57.679  INFO 22976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-16 17:34:57.680  INFO 22976 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-16 17:34:57.934  INFO 22976 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8882 (http)
+2021-03-16 17:34:57.943  INFO 22976 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-16 17:34:57.944  INFO 22976 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-03-16 17:34:58.017  INFO 22976 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-16 17:34:58.017  INFO 22976 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1226 ms
+2021-03-16 17:34:58.160  INFO 22976 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-03-16 17:34:58.163  INFO 22976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-03-16 17:34:58.164  INFO 22976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-03-16 17:34:58.164  INFO 22976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-03-16 17:34:58.164  INFO 22976 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-03-16 17:34:58.485  INFO 22976 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6492fab5: startup date [Tue Mar 16 17:34:56 CST 2021]; root of context hierarchy
+2021-03-16 17:34:58.540  INFO 22976 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/common/getUserInfo]}" onto public byte[] com.userJoin.controller.CommonController.getUserInfo(com.userJoin.dto.GetUserInfodto)
+2021-03-16 17:34:58.541  INFO 22976 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-03-16 17:34:58.542  INFO 22976 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-03-16 17:34:58.588  INFO 22976 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-16 17:34:58.588  INFO 22976 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-16 17:34:58.633  INFO 22976 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-16 17:34:58.810  INFO 22976 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-03-16 17:34:58.811  INFO 22976 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-03-16 17:34:58.811  INFO 22976 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-03-16 17:34:58.818  INFO 22976 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-03-16 17:34:59.174  INFO 22976 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2021-03-16 17:34:59.516  INFO 22976 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-03-16 17:34:59.523  INFO 22976 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2021-03-16 17:34:59.523  INFO 22976 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-03-16 17:34:59.523  INFO 22976 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:8882.errorChannel' has 1 subscriber(s).
+2021-03-16 17:34:59.523  INFO 22976 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2021-03-16 17:34:59.523  INFO 22976 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-03-16 17:34:59.530  INFO 22976 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8882"]
+2021-03-16 17:34:59.536  INFO 22976 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8882"]
+2021-03-16 17:34:59.543  INFO 22976 --- [main] o.a.tomcat.util.net.NioSelectorPool      : Using a shared selector for servlet write/read
+2021-03-16 17:34:59.555  INFO 22976 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8882 (http)
+2021-03-16 17:34:59.558  INFO 22976 --- [main] com.userJoin.UserServerApplication       : Started UserServerApplication in 3.069 seconds (JVM running for 3.662)
+2021-03-16 17:36:31.869  INFO 22976 --- [Thread-10] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6492fab5: startup date [Tue Mar 16 17:34:56 CST 2021]; root of context hierarchy
+2021-03-16 17:36:31.871  INFO 22976 --- [Thread-10] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-03-16 17:36:31.871  INFO 22976 --- [Thread-10] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2021-03-16 17:36:31.872  INFO 22976 --- [Thread-10] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-03-16 17:36:31.872  INFO 22976 --- [Thread-10] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:8882.errorChannel' has 0 subscriber(s).
+2021-03-16 17:36:31.872  INFO 22976 --- [Thread-10] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2021-03-16 17:36:31.873  INFO 22976 --- [Thread-10] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-03-16 17:36:31.873  INFO 22976 --- [Thread-10] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-03-16 17:36:55.330  INFO 23004 --- [main] com.userJoin.UserServerApplication       : Starting UserServerApplication on USER-20190525CB with PID 23004 (F:\idea2020Project\redisMode\target\classes started by Administrator in F:\idea2020Project\redisMode)
+2021-03-16 17:36:55.333  INFO 23004 --- [main] com.userJoin.UserServerApplication       : No active profile set, falling back to default profiles: default
+2021-03-16 17:36:55.359  INFO 23004 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ebf0f36: startup date [Tue Mar 16 17:36:55 CST 2021]; root of context hierarchy
+2021-03-16 17:36:55.433  INFO 23004 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 5.3.5.Final
+2021-03-16 17:36:55.757  WARN 23004 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.userJoin]' package. Please check your configuration.
+2021-03-16 17:36:55.766  WARN 23004 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.userJoin]' package. Please check your configuration.
+2021-03-16 17:36:55.790  INFO 23004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-03-16 17:36:55.825  INFO 23004 --- [main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-03-16 17:36:55.979  INFO 23004 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-03-16 17:36:55.984  INFO 23004 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-03-16 17:36:56.132  INFO 23004 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$3bdef39b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-16 17:36:56.166  INFO 23004 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$682ce218] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-16 17:36:56.212  INFO 23004 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-16 17:36:56.214  INFO 23004 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-16 17:36:56.437  INFO 23004 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8882 (http)
+2021-03-16 17:36:56.445  INFO 23004 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-16 17:36:56.446  INFO 23004 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-03-16 17:36:56.520  INFO 23004 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-16 17:36:56.520  INFO 23004 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1161 ms
+2021-03-16 17:36:56.661  INFO 23004 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-03-16 17:36:56.664  INFO 23004 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-03-16 17:36:56.664  INFO 23004 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-03-16 17:36:56.664  INFO 23004 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-03-16 17:36:56.664  INFO 23004 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-03-16 17:36:56.991  INFO 23004 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ebf0f36: startup date [Tue Mar 16 17:36:55 CST 2021]; root of context hierarchy
+2021-03-16 17:36:57.042  INFO 23004 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/common/getUserInfo]}" onto public byte[] com.userJoin.controller.CommonController.getUserInfo(com.userJoin.dto.GetUserInfodto)
+2021-03-16 17:36:57.044  INFO 23004 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-03-16 17:36:57.044  INFO 23004 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-03-16 17:36:57.088  INFO 23004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-16 17:36:57.088  INFO 23004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-16 17:36:57.133  INFO 23004 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-16 17:36:57.309  INFO 23004 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-03-16 17:36:57.310  INFO 23004 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-03-16 17:36:57.310  INFO 23004 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-03-16 17:36:57.314  INFO 23004 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-03-16 17:36:57.681  INFO 23004 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2021-03-16 17:36:58.030  INFO 23004 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-03-16 17:36:58.036  INFO 23004 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2021-03-16 17:36:58.037  INFO 23004 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-03-16 17:36:58.037  INFO 23004 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:8882.errorChannel' has 1 subscriber(s).
+2021-03-16 17:36:58.037  INFO 23004 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2021-03-16 17:36:58.037  INFO 23004 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-03-16 17:36:58.044  INFO 23004 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8882"]
+2021-03-16 17:36:58.050  INFO 23004 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8882"]
+2021-03-16 17:36:58.057  INFO 23004 --- [main] o.a.tomcat.util.net.NioSelectorPool      : Using a shared selector for servlet write/read
+2021-03-16 17:36:58.067  INFO 23004 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8882 (http)
+2021-03-16 17:36:58.071  INFO 23004 --- [main] com.userJoin.UserServerApplication       : Started UserServerApplication in 3.011 seconds (JVM running for 3.598)
+2021-03-16 17:40:47.550  INFO 23004 --- [Thread-9] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@6ebf0f36: startup date [Tue Mar 16 17:36:55 CST 2021]; root of context hierarchy
+2021-03-16 17:40:47.552  INFO 23004 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2021-03-16 17:40:47.552  INFO 23004 --- [Thread-9] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2021-03-16 17:40:47.553  INFO 23004 --- [Thread-9] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-03-16 17:40:47.553  INFO 23004 --- [Thread-9] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:8882.errorChannel' has 0 subscriber(s).
+2021-03-16 17:40:47.553  INFO 23004 --- [Thread-9] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2021-03-16 17:40:47.554  INFO 23004 --- [Thread-9] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2021-03-16 17:40:47.554  INFO 23004 --- [Thread-9] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2021-03-16 17:40:53.227  INFO 22292 --- [main] com.userJoin.UserServerApplication       : Starting UserServerApplication on USER-20190525CB with PID 22292 (F:\idea2020Project\redisMode\target\classes started by Administrator in F:\idea2020Project\redisMode)
+2021-03-16 17:40:53.230  INFO 22292 --- [main] com.userJoin.UserServerApplication       : No active profile set, falling back to default profiles: default
+2021-03-16 17:40:53.257  INFO 22292 --- [main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@178213b: startup date [Tue Mar 16 17:40:53 CST 2021]; root of context hierarchy
+2021-03-16 17:40:53.333  INFO 22292 --- [background-preinit] o.h.validator.internal.util.Version      : HV000001: Hibernate Validator 5.3.5.Final
+2021-03-16 17:40:53.653  WARN 22292 --- [main] t.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.userJoin]' package. Please check your configuration.
+2021-03-16 17:40:53.661  WARN 22292 --- [main] o.m.s.mapper.ClassPathMapperScanner      : No MyBatis mapper was found in '[com.userJoin]' package. Please check your configuration.
+2021-03-16 17:40:53.685  INFO 22292 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-03-16 17:40:53.718  INFO 22292 --- [main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2021-03-16 17:40:53.865  INFO 22292 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2021-03-16 17:40:53.870  INFO 22292 --- [main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2021-03-16 17:40:53.995  INFO 22292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.kafka.annotation.KafkaBootstrapConfiguration' of type [org.springframework.kafka.annotation.KafkaBootstrapConfiguration$$EnhancerBySpringCGLIB$$ba56db82] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-16 17:40:54.027  INFO 22292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e6a4c9ff] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-16 17:40:54.074  INFO 22292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-16 17:40:54.075  INFO 22292 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-03-16 17:40:54.304  INFO 22292 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8882 (http)
+2021-03-16 17:40:54.313  INFO 22292 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-03-16 17:40:54.314  INFO 22292 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.16
+2021-03-16 17:40:54.387  INFO 22292 --- [localhost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2021-03-16 17:40:54.388  INFO 22292 --- [localhost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1131 ms
+2021-03-16 17:40:54.530  INFO 22292 --- [localhost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2021-03-16 17:40:54.533  INFO 22292 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2021-03-16 17:40:54.533  INFO 22292 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2021-03-16 17:40:54.533  INFO 22292 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2021-03-16 17:40:54.533  INFO 22292 --- [localhost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2021-03-16 17:40:54.861  INFO 22292 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@178213b: startup date [Tue Mar 16 17:40:53 CST 2021]; root of context hierarchy
+2021-03-16 17:40:54.911  INFO 22292 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/common/getUserInfo]}" onto public byte[] com.userJoin.controller.CommonController.getUserInfo(com.userJoin.dto.GetUserInfodto)
+2021-03-16 17:40:54.913  INFO 22292 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2021-03-16 17:40:54.913  INFO 22292 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2021-03-16 17:40:54.957  INFO 22292 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-16 17:40:54.958  INFO 22292 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-16 17:40:55.004  INFO 22292 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2021-03-16 17:40:55.180  INFO 22292 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-03-16 17:40:55.180  INFO 22292 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-03-16 17:40:55.181  INFO 22292 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-03-16 17:40:55.186  INFO 22292 --- [main] t.m.m.autoconfigure.MapperCacheDisabler  : Clear EntityHelper entityTableMap cache.
+2021-03-16 17:40:55.587  INFO 22292 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2021-03-16 17:40:55.946  INFO 22292 --- [main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2021-03-16 17:40:55.952  INFO 22292 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2021-03-16 17:40:55.953  INFO 22292 --- [main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2021-03-16 17:40:55.953  INFO 22292 --- [main] o.s.i.channel.PublishSubscribeChannel    : Channel 'application:8882.errorChannel' has 1 subscriber(s).
+2021-03-16 17:40:55.953  INFO 22292 --- [main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2021-03-16 17:40:55.953  INFO 22292 --- [main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2021-03-16 17:40:55.960  INFO 22292 --- [main] o.a.coyote.http11.Http11NioProtocol      : Initializing ProtocolHandler ["http-nio-8882"]
+2021-03-16 17:40:55.966  INFO 22292 --- [main] o.a.coyote.http11.Http11NioProtocol      : Starting ProtocolHandler ["http-nio-8882"]
+2021-03-16 17:40:55.973  INFO 22292 --- [main] o.a.tomcat.util.net.NioSelectorPool      : Using a shared selector for servlet write/read
+2021-03-16 17:40:55.984  INFO 22292 --- [main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8882 (http)
+2021-03-16 17:40:55.987  INFO 22292 --- [main] com.userJoin.UserServerApplication       : Started UserServerApplication in 3.033 seconds (JVM running for 3.624)
+2021-03-16 18:34:12.925  INFO 22292 --- [http-nio-8882-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2021-03-16 18:34:12.925  INFO 22292 --- [http-nio-8882-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2021-03-16 18:34:12.944  INFO 22292 --- [http-nio-8882-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 19 ms
+2021-03-16 18:34:12.966  INFO 22292 --- [http-nio-8882-exec-1] c.u.services.impl.HeNanUserServerImpl    : 开始获取统一信息===========
+2021-03-16 18:34:12.966  INFO 22292 --- [http-nio-8882-exec-1] c.u.services.impl.HeNanUserServerImpl    : 获取证书的url：file:/F:/idea2020Project/redisMode/target/classes/tacs.cer
+2021-03-16 18:34:12.971  INFO 22292 --- [http-nio-8882-exec-1] c.u.services.impl.HeNanUserServerImpl    : 统一客户端对象：
+2021-03-16 18:34:13.163  INFO 22292 --- [http-nio-8882-exec-1] c.u.services.impl.HeNanUserServerImpl    : 获取自然人结果：code:80012,msg:token过期或无效
+2021-03-16 18:34:13.164  INFO 22292 --- [http-nio-8882-exec-1] c.u.services.impl.HeNanUserServerImpl    : 统一用户信息：UserOutModel{userCard='null', userName='null', userPhone='null', CompanyId='null', CompanyName='null'}
+2021-03-16 18:35:56.037  INFO 22292 --- [http-nio-8882-exec-3] c.u.services.impl.HeNanUserServerImpl    : 开始获取统一信息===========
+2021-03-16 18:35:56.160  INFO 22292 --- [http-nio-8882-exec-3] c.u.services.impl.HeNanUserServerImpl    : 获取自然人结果：code:80012,msg:token过期或无效
+2021-03-16 18:35:56.160  INFO 22292 --- [http-nio-8882-exec-3] c.u.services.impl.HeNanUserServerImpl    : 统一用户信息：UserOutModel{userCard='null', userName='null', userPhone='null', CompanyId='null', CompanyName='null'}

@@ -1,0 +1,61 @@
+server:
+  port: 8882
+redis:
+  host: 127.0.0.1
+  port: 6379
+  pwd:
+  timeout: 1000
+  maxIdle: 10
+  maxWaitMillis: -1
+  maxTotal: 20
+  database: 3
+spring:
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+#    url: jdbc:mysql://127.0.0.1:3306/lh?useUnicode=true&characterEncoding=utf-8&useSSL=false&serverTimezone=Asia/Shanghai
+    url: jdbc:mysql://192.168.90.183:3306/license_cloud_236?useUnicode=true&characterEncoding=utf8&rewriteBatchedStatements=true
+    username: root
+    password: root2017
+  kafka:
+    bootstrap-servers: 127.0.0.1:9092
+    consumer:
+      #该属性指定了消费者在读取一个没有初始偏移量的分区或者偏移量无效的情况下该如何处理
+      #latest (默认)在偏移量无效的情况下，消费者从最新的数据开始读取数据（在消费者启动之后的记录）
+      #earliest 在偏移量无效的情况下，消费者从初始位置开始读取分区数据
+      auto-offset-reset: latest
+      #consumer 消息的签收机制：手工签收
+      enable-auto-commit: false
+      group-id: "group01"
+      #反系列化配置
+      key-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      value-deserializer: org.apache.kafka.common.serialization.StringDeserializer
+      max-poll-records: 50
+    properties:
+      max:
+        poll:
+          interval:
+            ms: 30000
+    listener:
+      ack-mode: manual
+      concurrency: 5
+      poll-timeout: 30000
+    producer:
+      #这个是生产端最重要的选项
+      #acks=0 生产者在成功写入消息之前不会等待来自服务器的响应
+      #acks=1 只要集群首领节点收到消息，生产者就会收到一个来自服务器成功的响应
+      #acks=-1 表示分区leader必须等待消息被成功写入到所有的ISR副本(同步副本)中才认为producer请求成功。
+      acks: 1
+      #批量发送数据的配置
+      batch-size: 16384
+      # 设置kafka 生产者内存缓冲区的大小(32M)
+      buffer-memory: 33554432
+      # kafka producer 发送消息失败时的重试次数
+      retries: 1
+      # kafka消息的系列化配置
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.apache.kafka.common.serialization.StringSerializer
+logging:
+  config: classpath:config/logback-spring.xml
+#mybatis:
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
