@@ -32,10 +32,10 @@
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!--相对路径，生成的文件就在项目根目录下-->
             <FileNamePattern>
-                logs/%d{yyyy-MM}/%d{yyyy-MM-dd}.log
+                logs/%d{yyyy-MM-dd}.log
             </FileNamePattern>
-            <!--注意超过365天的日志文件会被删除，即使已经按天分开也会删除-->
-            <MaxHistory>365</MaxHistory>
+            <!--注意超过30天的日志文件会被删除-->
+            <MaxHistory>30</MaxHistory>
         </rollingPolicy>
         <!--日志文件里保存的日志级别-->
         <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
