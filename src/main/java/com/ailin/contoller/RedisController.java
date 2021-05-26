@@ -4,6 +4,8 @@ import com.ailin.Pojo.User;
 import com.ailin.mode.ResultMode;
 import com.ailin.server.RedisServer;
 import com.google.gson.Gson;
+import org.redisson.api.RLock;
+import org.redisson.api.RedissonClient;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.integration.redis.util.RedisLockRegistry;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -23,6 +25,9 @@ public class RedisController {
 
     @Autowired
     private RedisLockRegistry redisLockRegistry;
+
+    @Autowired
+    private RedissonClient redissonClient;
 
     private int num = 20;
 
@@ -86,6 +91,23 @@ public class RedisController {
             boolean isLock = lock.tryLock(1, TimeUnit.SECONDS);
             String s = Thread.currentThread().getName();
             if (num > 0 && isLock) {
+                System.out.println(s + "排号成功，号码是：" + num);
+                num--;
+            } else {
+                System.out.println(s + "排号失败,号码已经被抢光");
+            }
+        } finally {
+            if(lock != null) lock.unlock();
+        }
+    }
+
+    @GetMapping("testRedissonLock")
+    public void testRedissonLock() throws InterruptedException {
+        RLock lock = null;
+        try {
+            lock = redissonClient.getLock("lock1");
+            String s = Thread.currentThread().getName();
+            if (num > 0 && lock.tryLock(1, TimeUnit.SECONDS)) {
                 System.out.println(s + "排号成功，号码是：" + num);
                 num--;
             } else {

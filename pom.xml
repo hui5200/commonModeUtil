@@ -246,6 +246,24 @@
             <artifactId>spring-integration-redis</artifactId>
         </dependency>
 
+        <!--redisson-->
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-boot-starter</artifactId>
+            <version>3.14.0</version>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.redisson</groupId>
+                    <artifactId>redisson-spring-data-23</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.redisson</groupId>
+            <artifactId>redisson-spring-data-18</artifactId>
+            <version>3.14.0</version>
+        </dependency>
+
         <!--注释依赖-->
         <dependency>
             <groupId>io.springfox</groupId>
