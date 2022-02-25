@@ -1,22 +1,23 @@
 package com.ailin.concurrence;
 
 import com.ailin.util.ImageConverterUtil;
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import sun.misc.BASE64Decoder;
 import sun.misc.BASE64Encoder;
 
 import java.io.*;
 import java.util.List;
-import java.util.concurrent.ExecutionException;
-import java.util.concurrent.ExecutorService;
-import java.util.concurrent.Executors;
-import java.util.concurrent.Future;
+import java.util.concurrent.*;
 
 public class CcTest {
 
     public static void main(String[] args) throws ExecutionException, InterruptedException {
 
         ExecutorService executor = Executors.newFixedThreadPool(10);
-
+        ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("demo-pool-%d").build();
+        ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(10, 50, 3600,
+                TimeUnit.MILLISECONDS, new LinkedBlockingDeque<>(1024),threadFactory);
+        threadPoolExecutor.submit(new MyThread());
 //        executor.submit(new MyThread());
 //
 //        Thread.sleep(3000);

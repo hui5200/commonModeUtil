@@ -3,6 +3,7 @@ package com.ailin.server.kafka;
 import com.ailin.Pojo.User;
 import com.ailin.server.RedisServer;
 import com.alibaba.fastjson.JSONObject;
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.google.gson.Gson;
 import org.apache.kafka.clients.consumer.*;
 import org.slf4j.Logger;
@@ -42,43 +43,40 @@ public class KafkaConsumerServer {
     }
 
     public void onMessage(){
+        ThreadFactory threadFactory = new ThreadFactoryBuilder().setNameFormat("kafka-user-info").build();
         ThreadPoolExecutor poolExecutor = new ThreadPoolExecutor(10, 50, 300,
-                TimeUnit.SECONDS, new ArrayBlockingQueue<>(10));
-        poolExecutor.submit(new Runnable() {
-            @Override
-            public void run() {
+                TimeUnit.SECONDS, new ArrayBlockingQueue<>(10), threadFactory);
+        poolExecutor.submit(() -> {
+            while (true){
 
-                while (true){
-
-                    long beginTime = System.currentTimeMillis();
-                    long nowTime = 0L;
-                    try {
-                        ConsumerRecords<String, Object> results = kafkaConsumer.poll(2000);
-                        nowTime = System.currentTimeMillis();
-                        Iterator<ConsumerRecord<String, Object>> iterator = results.iterator();
-                        if(!iterator.hasNext()){
-                            logger.info("kafka拉取用户数据为空！！！");
-                            continue;
-                        }
-                        while (iterator.hasNext()){
-                            ConsumerRecord<String, Object> next = iterator.next();
-                            String key = next.key();
-                            String value = (String)next.value();
-                            Map map = JSONObject.parseObject(value, Map.class);
-                            String userId = map.get("userId").toString();
-
-                            String userInfo = (String)redisServer.findDataByKey("UserInfo", userId);
-                            System.out.println(JSONObject.parseObject(userInfo, User.class));
-                            System.out.println("每次消费时间："+ (nowTime-beginTime) + "ms");
-                        }
-                        //手动提交
-                        kafkaConsumer.commitSync();
-
-                    }catch (Exception e){
-                        logger.error("kafka消费异常：{}", e);
+                long beginTime = System.currentTimeMillis();
+                long nowTime = 0L;
+                try {
+                    ConsumerRecords<String, Object> results = kafkaConsumer.poll(2000);
+                    nowTime = System.currentTimeMillis();
+                    Iterator<ConsumerRecord<String, Object>> iterator = results.iterator();
+                    if(!iterator.hasNext()){
+                        logger.info("kafka拉取用户数据为空！！！");
+                        continue;
                     }
+                    while (iterator.hasNext()){
+                        ConsumerRecord<String, Object> next = iterator.next();
+                        String key = next.key();
+                        String value = (String)next.value();
+                        Map map = JSONObject.parseObject(value, Map.class);
+                        String userId = map.get("userId").toString();
 
+                        String userInfo = (String)redisServer.findDataByKey("UserInfo", userId);
+                        System.out.println(JSONObject.parseObject(userInfo, User.class));
+                        System.out.println("每次消费时间："+ (nowTime-beginTime) + "ms");
+                    }
+                    //手动提交
+                    kafkaConsumer.commitSync();
+
+                }catch (Exception e){
+                    logger.error("kafka消费异常：{}", e);
                 }
+
             }
         });
     }

@@ -53,8 +53,9 @@ public class ChangeVideo {
 			status = processFLV(inputFile, outputFile);// 直接将文件转为flv文件
 		} else if (type == 1) {
 			String avifilepath = processAVI(type, inputFile);
-			if (avifilepath == null)
+			if (avifilepath == null) {
 				return false;// avi文件没有得到
+			}
 			status = processFLV(avifilepath, outputFile);// 将avi转为flv
 		}
 		return status;
@@ -64,32 +65,32 @@ public class ChangeVideo {
 		String type = inputFile.substring(inputFile.lastIndexOf(".") + 1,
 				inputFile.length()).toLowerCase();
 		// ffmpeg能解析的格式：（asx，asf，mpg，wmv，3gp，mp4，mov，avi，flv等）
-		if (type.equals("avi")) {
+		if ("avi".equals(type)) {
 			return 0;
-		} else if (type.equals("mpg")) {
+		} else if ("mpg".equals(type)) {
 			return 0;
-		} else if (type.equals("wmv")) {
+		} else if ("wmv".equals(type)) {
 			return 0;
-		} else if (type.equals("3gp")) {
+		} else if ("3gp".equals(type)) {
 			return 0;
-		} else if (type.equals("mov")) {
+		} else if ("mov".equals(type)) {
 			return 0;
-		} else if (type.equals("mp4")) {
+		} else if ("mp4".equals(type)) {
 			return 0;
-		} else if (type.equals("asf")) {
+		} else if ("asf".equals(type)) {
 			return 0;
-		} else if (type.equals("asx")) {
+		} else if ("asx".equals(type)) {
 			return 0;
-		} else if (type.equals("flv")) {
+		} else if ("flv".equals(type)) {
 			return 0;
 		}
 		// 对ffmpeg无法解析的文件格式(wmv9，rm，rmvb等),
 		// 可以先用别的工具（mencoder）转换为avi(ffmpeg能解析的)格式.
-		else if (type.equals("wmv9")) {
+		else if ("wmv9".equals(type)) {
 			return 1;
-		} else if (type.equals("rm")) {
+		} else if ("rm".equals(type)) {
 			return 1;
-		} else if (type.equals("rmvb")) {
+		} else if ("rmvb".equals(type)) {
 			return 1;
 		}
 		return 9;

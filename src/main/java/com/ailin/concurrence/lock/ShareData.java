@@ -68,7 +68,9 @@ public class ShareData {
         if(!file.exists()){
             try {
                 boolean newFile = file.createNewFile();
-                if(newFile) log.info("创建成功,路径：{}",file.getPath() + "." + file.getName());
+                if(newFile) {
+                    log.info("创建成功,路径：{}",file.getPath() + "." + file.getName());
+                }
             } catch (IOException e) {
                 e.printStackTrace();
             }

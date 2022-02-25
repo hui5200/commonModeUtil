@@ -97,7 +97,9 @@ public class RedisController {
                 System.out.println(s + "排号失败,号码已经被抢光");
             }
         } finally {
-            if(lock != null) lock.unlock();
+            if(lock != null) {
+                lock.unlock();
+            }
         }
     }
 
