@@ -6,11 +6,11 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="redisMode" />
+        <module name="commonModeAndUtil" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="redisMode" target="8" />
+      <module name="commonModeAndUtil" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>
